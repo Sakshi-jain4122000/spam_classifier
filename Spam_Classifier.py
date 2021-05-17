@@ -58,11 +58,11 @@ def predict(text):
 st.title('Spam Classifier')
 st.image('image.jpg')
 user_input = st.text_input('Write your message')
-submit = st.button('predicct')
+submit = st.button('predict')
 if submit:
     answer = predict([user_input])
     st.text(answer)
-
+st.markdown('**Made with:heart:Sakshi...**')
 
 
 
