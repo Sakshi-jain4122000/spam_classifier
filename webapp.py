@@ -12,7 +12,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
-df = pd.read_csv(r'C:\Users\DELL\PycharmProjects\spam_streamlit\spam.csv')
+df = pd.read_csv(r'spam.csv')
 df = df.drop(['Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4'], axis=1)
 df.rename(columns={'v1': 'labels', 'v2': 'message'}, inplace=True)
 df.drop_duplicates(inplace=True)
